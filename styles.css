@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+:root {
+  --title: #fffcf9;
+  --subtitle: #b3b3b3;
+  --bg-button: #e9e6e3;
+  --text-button: #1a1a1a;
+  --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  color: var(--title);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--background);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 125px;
+}
+
+#logo {
+  height: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--title);
+  padding-top: 10px;
+}
+
+#container {
+  display: flex;
+  gap: 30px;
+  padding-top: 30px;
+}
+
+#movieInfo p {
+  padding-top: 20px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  color: var(--text-button);
+  background: var(--bg-button);
+  background-image: url(./assets/shuffle.svg);
+  margin-top: 30px;
+  padding: 10px;
+  font-size: 0.75rem;
+  border: 2px solid #1a1a1a;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+button img {
+  height: 1rem;
+  margin-right: 10px;
+}
+
+main > p {
+  padding-top: 30px;
+  font-weight: 400;
+  font-size: 0.875rem;
+  width: 25rem;
+  text-align: center;
+}
