@@ -1,3 +1,4 @@
+import axios from 'axios'
 import { API_KEY, BASE_URL, IMG_URL, language } from './api.js'
 
 //const movieImage = document.getElementById('movieImage')
@@ -10,3 +11,12 @@ const url = `${BASE_URL}${movieId}?api_key=${API_KEY}&${language}`
 
 console.log(movieId)
 console.log(url)
+
+function findMovie() {
+  axios
+    .get(url)
+    .then(response => {
+      console.log(response)
+    })
+    .catch(error => console.log(error))
+}
