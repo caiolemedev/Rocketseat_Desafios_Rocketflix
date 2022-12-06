@@ -17,8 +17,8 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  min-height: 100vh;
   background: var(--background);
   background-repeat: no-repeat;
   background-size: cover;
@@ -29,7 +29,7 @@ main {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-top: 125px;
+  padding-top: 100px;
 }
 
 #logo {
@@ -44,13 +44,26 @@ h1 {
 }
 
 #container {
+  width: 60%;
   display: flex;
   gap: 30px;
   padding-top: 30px;
 }
 
-#movieInfo p {
+#movieTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+#movieSummary {
+  font-size: 1rem;
+  font-weight: 400;
   padding-top: 20px;
+}
+
+#movieImage {
+  width: 180px;
+  height: 250px;
 }
 
 button {
@@ -76,8 +89,24 @@ button img {
 
 main > p {
   padding-top: 30px;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 0.875rem;
   width: 25rem;
   text-align: center;
+}
+
+@media (max-width: 800px) {
+  #container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #movieTitle {
+    text-align: center;
+  }
+
+  #movieSummary {
+    text-align: center;
+  }
 }
