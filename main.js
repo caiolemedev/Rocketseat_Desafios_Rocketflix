@@ -24,11 +24,13 @@ function findMovieFunc() {
       movieTitle.textContent = `${data.title}`
       movieImage.src = `${IMG_URL}${data.poster_path}`
       movieImage.alt = `Imagem do filme`
+      movieImage.style.display = 'block'
     })
     .catch(error => {
       movieSummary.textContent = `Bora codar!!`
       movieTitle.textContent = `Ops, hoje não é dia de assistir filme.`
-      movieImage.src = ``
+      movieImage.src = `./assets/errorImg.png`
       movieImage.alt = `Imagem de erro`
+      movieImage.style.display = 'block'
     })
 }

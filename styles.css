@@ -62,6 +62,7 @@ h1 {
 }
 
 #movieImage {
+  display: none;
   width: 180px;
   height: 250px;
 }
